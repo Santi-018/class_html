@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Libros</title>
+    <style>
+        body {
+            border: 3px solid #c6e100;
+            padding: 10px;
+            border-radius: 800px;
+            box-shadow: 0 0 3cap rgba(113, 5, 5, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        form {
+            border: 3px solid #ef0d0d;
+            padding: 100px;
+            border-radius: 100px;
+            box-shadow: 0 0 3cap rgba(192, 12, 12, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Libros</h1>
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre"  edad= "edad" required><br><br>
+        
+        <label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" min="0" required><br><br>
+
+        <label>Género:</label><br>
+        <div class="genero">
+            <label>
+                <input type="radio" name="genero" value="masculino" required> Masculino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="femenino" required> Femenino
+            </label>
+            <label>
+                <input type="radio" name="genero" value="otro" required> Otro
+
+            </label>
+            <input type="radio" name="genero" value="alenigena" required> alenigena
+        </label>
+        </div><br>
+
+
+
+
+        <label for="id">ID:</label><br>
+        <input type="text" id="id" name="id" required><br><br>
+        
+        <input type="search" id="buscar" name="buscar" placeholder="Buscar..." required><br><br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
